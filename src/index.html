@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script type="module" defer src="webapp.js"></script>
+    <link rel="stylesheet" href="resources/main.css">
+    <link rel="stylesheet" href="resources/forkawesome/fork-awesome.min.css">
+</head>
+<body>
+
+    <div id="workspace"></div>
+    <textarea id="codespace"></textarea>
+
+
+    <xml id="toolbox" style="display: none">
+        <category name="Logic">
+            <block type="controls_if"></block>
+            <block type="logic_compare"></block>
+            <block type="logic_operation"></block>
+            <block type="logic_negate"></block>
+            <block type="logic_null"></block>
+        </category>
+        <category name="Control">
+            <block type="controls_for">
+            <value name="FROM">
+                <block type="math_number">
+                <field name="NUM">1</field>
+                </block>
+            </value>
+            <value name="TO">
+                <block type="math_number">
+                <field name="NUM">10</field>
+                </block>
+            </value>
+            </block>
+            <block type="controls_whileUntil"></block>
+        </category>
+        <category name="Math">
+            <block type="math_number"></block>
+            <block type="math_arithmetic"></block>
+            
+        </category>
+        <category name="Text">
+            <block type="text"></block>
+        </category>
+        <category name="Functions" custom="PROCEDURE"></category>
+    </xml>
+</body>
+</html>
