@@ -3,6 +3,7 @@ import { initLogic } from "./blocks/Logic";
 import { initMath } from "./blocks/Math";
 import { initProcedures } from "./blocks/Procedures";
 import { initText } from "./blocks/Text";
+import { initTestBlock } from "./blocks/TestBlock";
 
 
 const Blockly = require("blockly");
@@ -11,10 +12,11 @@ const Blockly = require("blockly");
 function createPredefinedBlocks(){
 
   initControl();
-	initLogic();
+    initLogic();
   initMath();
   initProcedures();
   initText();
+  initTestBlock();
   
 }
 
